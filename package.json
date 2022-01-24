@@ -1,0 +1,75 @@
+{
+  "name": "ember-cli-code-coverage",
+  "version": "0.3.2",
+  "description": "Code coverage for ember projects using Istanbul",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "node-test": "mocha test/**/*-test.js",
+    "lint": "eslint config lib test tests *.js",
+    "jscs": "jscs lib test",
+    "test": "npm run-script jscs && npm run-script lint && npm run-script node-test"
+  },
+  "repository": "kategengler/ember-cli-code-coverage",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "Katie Gengler",
+  "contributors": [
+    "Matthew Dahl (https://github.com/sandersky)"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "broccoli-asset-rev": "^2.4.2",
+    "chai": "^3.5.0",
+    "chai-files": "^1.2.0",
+    "ember-cli": "2.5.0",
+    "ember-cli-app-version": "^1.0.0",
+    "ember-cli-dependency-checker": "^1.2.0",
+    "ember-cli-htmlbars": "^1.0.3",
+    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
+    "ember-cli-inject-live-reload": "^1.4.0",
+    "ember-cli-qunit": "^1.4.0",
+    "ember-cli-release": "^1.0.0-beta.1",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-uglify": "^1.2.0",
+    "ember-disable-prototype-extensions": "^1.1.0",
+    "ember-export-application-global": "^1.0.5",
+    "ember-load-initializers": "^0.5.1",
+    "ember-resolver": "^2.0.3",
+    "ember-try": "^0.2.2",
+    "eslint": "^2.10.2",
+    "glob": "^7.0.3",
+    "jscs": "^2.11.0",
+    "loader.js": "^4.0.1",
+    "mocha": "^2.4.5",
+    "rsvp": "^3.2.1",
+    "sinon": "^1.17.4"
+  },
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "babel-core": "^5.8.38",
+    "body-parser": "^1.15.0",
+    "broccoli-filter": "^1.2.3",
+    "broccoli-funnel": "^1.0.1",
+    "broccoli-merge-trees": "^1.1.1",
+    "ember-cli-babel": "^5.1.6",
+    "escodegen": "^1.8.0",
+    "esprima": "^2.7.2",
+    "exists-sync": "0.0.3",
+    "extend": "^3.0.0",
+    "fs-extra": "^0.26.7",
+    "istanbul": "^0.4.3",
+    "source-map": "0.5.6"
+  },
+  "ember-addon": {
+    "configPath": "tests/dummy/config",
+    "versionCompatibility": {
+      "ember": ">=1.10.0"
+    }
+  }
+}
