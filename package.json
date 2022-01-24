@@ -12,7 +12,7 @@
     "jscs": "jscs lib test",
     "test": "npm run-script jscs && npm run-script lint && npm run-script node-test"
   },
-  "repository": "kategengler/ember-cli-code-coverage",
+  "repository": "Satya-Alasakani/ember-cli-code-cov",
   "engines": {
     "node": ">= 0.10.0"
   },
